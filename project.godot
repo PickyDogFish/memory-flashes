@@ -21,7 +21,6 @@ _global_script_class_icons={
 [application]
 
 config/name="Memory flashes"
-run/main_scene="res://scenes/Main Menu.tscn"
 config/icon="res://sprites/icon.png"
 
 [display]
