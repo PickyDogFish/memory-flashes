@@ -1,0 +1,90 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://font/Rocketwildness-7BB8R.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://assets/1.jpg" type="Texture" id=2]
+[ext_resource path="res://buttons/NewGameButton.tscn" type="PackedScene" id=3]
+[ext_resource path="res://buttons/Option BUtton.tscn" type="PackedScene" id=4]
+[ext_resource path="res://buttons/Exit Button.tscn" type="PackedScene" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 72
+outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "FadeIn"
+step = 0.5
+
+[node name="Main menu" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="1" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+texture = ExtResource( 2 )
+stretch_mode = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -407.0
+margin_top = 70.0
+margin_right = 407.0
+margin_bottom = 143.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_colors/font_outline_modulate = Color( 1, 1, 1, 1 )
+custom_colors/font_color_shadow = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "MEMORY FLASHES"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Menu" type="VBoxContainer" parent="."]
+margin_left = 120.0
+margin_top = 150.0
+margin_right = 1800.0
+margin_bottom = 930.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="CenterROw" type="HBoxContainer" parent="Menu"]
+margin_right = 1680.0
+margin_bottom = 780.0
+size_flags_vertical = 3
+
+[node name="Buttons" type="VBoxContainer" parent="Menu/CenterROw"]
+margin_right = 1680.0
+margin_bottom = 780.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="NewGameButton" parent="Menu/CenterROw/Buttons" instance=ExtResource( 3 )]
+margin_bottom = 80.0
+
+[node name="Option BUtton" parent="Menu/CenterROw/Buttons" instance=ExtResource( 4 )]
+margin_top = 84.0
+margin_bottom = 164.0
+
+[node name="Exit Button" parent="Menu/CenterROw/Buttons" instance=ExtResource( 5 )]
+margin_top = 168.0
+margin_bottom = 248.0
+
+[node name="FadeIn" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="FadeIn"]
+anims/FadeIn = SubResource( 2 )
