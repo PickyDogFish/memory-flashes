@@ -23,6 +23,6 @@ scale = Vector2( 3.24, 1 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable/1"]
-position = Vector2( 1.23453, -237 )
+position = Vector2( 1.23459, -237 )
 scale = Vector2( 1.47708, 1.87236 )
 shape = SubResource( 1 )
