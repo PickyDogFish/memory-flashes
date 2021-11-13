@@ -13,6 +13,7 @@ var card8 = preload("res://scenes/cards/card8.tscn")
 var card9 = preload("res://scenes/cards/card9.tscn")
 var card10 = preload("res://scenes/cards/card10.tscn")
 
+
 var cardStack = [card1.instance(), card1.instance(), card2.instance(), card2.instance(), card3.instance(), card3.instance(), card4.instance(), card4.instance(), card5.instance(), card5.instance(), card6.instance(), card6.instance(), card7.instance(), card7.instance(), card8.instance(), card8.instance(), card9.instance(), card9.instance(), card10.instance(), card10.instance(),]
 var flipped_cards = []
 
