@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://sprites/memory_cards/front_1.png" type="Texture" id=1]
+[ext_resource path="res://sprites/memory_cards/front_8.png" type="Texture" id=1]
 [ext_resource path="res://scripts/card.gd" type="Script" id=2]
 [ext_resource path="res://sprites/memory_cards/back.png" type="Texture" id=3]
 
