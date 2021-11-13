@@ -16,7 +16,6 @@ func get_name():
 	return self.card_name
 	
 func flip():
-	print(self.flipped)
 	if flipped:
 		get_child(1).show()
 		get_child(0).hide()

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://sprites/memory_cards/front_1.png" type="Texture" id=1]
+[ext_resource path="res://sprites/memory_cards/front_5.png" type="Texture" id=1]
 [ext_resource path="res://scripts/card.gd" type="Script" id=2]
 [ext_resource path="res://sprites/memory_cards/back.png" type="Texture" id=3]
 
@@ -10,7 +10,7 @@ extents = Vector2( 622.555, 49.1504 )
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 2 )
 
-[node name="Card1" type="Sprite" parent="."]
+[node name="Card5" type="Sprite" parent="."]
 visible = false
 scale = Vector2( 1.00137, 1 )
 texture = ExtResource( 1 )

@@ -1,11 +1,11 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://sprites/memory_cards/card3.png" type="Texture" id=1]
+[ext_resource path="res://sprites/memory_cards/front_3.png" type="Texture" id=1]
 [ext_resource path="res://scripts/card.gd" type="Script" id=2]
 [ext_resource path="res://sprites/memory_cards/back.png" type="Texture" id=3]
 
 [sub_resource type="RectangleShape2D" id=1]
-extents = Vector2( 126.9, 9.99427 )
+extents = Vector2( 622.555, 49.229 )
 
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 2 )

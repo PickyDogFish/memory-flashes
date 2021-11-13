@@ -10,7 +10,7 @@ extents = Vector2( 622.555, 49.1504 )
 [node name="Area2D" type="Area2D"]
 script = ExtResource( 2 )
 
-[node name="Card1" type="Sprite" parent="."]
+[node name="Card8" type="Sprite" parent="."]
 visible = false
 scale = Vector2( 1.00137, 1 )
 texture = ExtResource( 1 )
