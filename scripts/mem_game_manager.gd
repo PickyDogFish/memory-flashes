@@ -78,11 +78,14 @@ func check_if_won():
 			won = false
 			
 	if won:
-		print("youve won")
+		you_have_won()
 		
 func flip_card_array(array):
 	for card in array:
 		card.flip()
 		
 		
+		
+func you_have_won():
+	$TextureButton.show()
 			

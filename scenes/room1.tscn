@@ -30,6 +30,17 @@ position = Vector2( 1.23459, -237 )
 scale = Vector2( 1.47708, 1.87236 )
 shape = SubResource( 1 )
 
+[node name="2" type="Area2D" parent="Clickable"]
+position = Vector2( 177, 441 )
+scale = Vector2( 2.6, 1.28 )
+script = ExtResource( 2 )
+change_to_scene = "res://scenes/repeat_pattern.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable/2"]
+position = Vector2( 0.769228, 3.26086 )
+scale = Vector2( 1.47708, 1.87236 )
+shape = SubResource( 1 )
+
 [node name="TextureButton" type="TextureButton" parent="."]
 anchor_top = 1.0
 anchor_right = 1.0
@@ -45,5 +56,6 @@ __meta__ = {
 "_edit_use_anchors_": false,
 "_editor_description_": ""
 }
+scene_to_load = "res://scenes/room2.tscn"
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_TextureButton_pressed"]

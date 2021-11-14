@@ -49,6 +49,7 @@ func _process(delta):
 		for i in range(0, level * 2):
 			solution[i].press()
 
+
 func place_buttons():
 	var numOfCards = len(buttonStack)
 	var pos_x = get_viewport_rect().size[0]/2 - (200 + 20) * rows/2
@@ -65,11 +66,13 @@ func place_buttons():
 		pos_x = get_viewport_rect().size[0]/2 - (200 + 20) * rows/2
 		pos_y += 256 + 10
 
+
 func on_button_clicked(button:Repeat_button):
 	flippedButtons.append(button)
 	button.press()
 	#checkLastButton()
 	checkIfLastInSolution()
+	
 
 func checkLastButton():
 	print(flippedButtons)
@@ -84,6 +87,7 @@ func checkLastButton():
 		level += 1
 		unpress_all_buttons()
 		show_solution()
+		
 		
 func checkIfLastInSolution():
 	var checkButton = flippedButtons[-1]
@@ -111,19 +115,6 @@ func show_solution():
 	showingSolution = true
 	flippedButtons = []
 	
-
-#func oldCheckLastPoint():
-#	var checkPoint = flippedButtons[-1]
-#	if levels[level] < currentLinePoints.size() or checkPoint != connectionPoints[solutionLine[currentLinePoints.size()-1]]:
-#		print(checkPoint, solutionLine[currentLinePoints.size()-1])
-#		$mistake_sound.play()
-#		level = 1
-#		show_solution()
-#	if level == 3:
-#			you_have_won()
-#		elif levels[level] == currentLinePoints.size():
-#			level += 1
-#			show_solution()
 		
 func flip_card_array(array):
 	for card in array:
@@ -144,4 +135,6 @@ func unpress_all_buttons():
 func you_have_won():
 	timeLeft = 99999
 	showingSolution = true
+	$TextureButton.show()
+	
 		
