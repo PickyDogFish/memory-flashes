@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/2_soundpuzzle.wav-38b40fc99a75d90ce9d13e183bab1d88.sample"
+
+[deps]
+
+source_file="res://sound_effects_game/2_soundpuzzle.wav"
+dest_files=[ "res://.import/2_soundpuzzle.wav-38b40fc99a75d90ce9d13e183bab1d88.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0
