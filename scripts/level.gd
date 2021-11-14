@@ -22,3 +22,5 @@ func on_click(node):
 
 
 
+func _on_TextureButton_pressed():
+	get_tree().change_scene("res://scenes/room3.tscn")
