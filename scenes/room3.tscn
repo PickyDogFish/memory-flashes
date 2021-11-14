@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=2]
 
-[ext_resource path="res://sprites/image2.png" type="Texture" id=1]
+[ext_resource path="res://assets/room_3.png" type="Texture" id=1]
 [ext_resource path="res://scripts/ClickableObject.gd" type="Script" id=2]
 [ext_resource path="res://scripts/level.gd" type="Script" id=3]
 
@@ -10,9 +10,15 @@ extents = Vector2( 41.4818, 83.0404 )
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 3 )
 
-[node name="RoomSketch1" type="Sprite" parent="."]
-position = Vector2( 962, 566 )
+[node name="Room3" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
 texture = ExtResource( 1 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Clickable" type="Node2D" parent="."]
 position = Vector2( 0, 2 )
@@ -23,6 +29,17 @@ scale = Vector2( 3.24, 1 )
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable/Area2D"]
+position = Vector2( 1.33572, -212 )
+scale = Vector2( 1.10362, 1.08381 )
+shape = SubResource( 1 )
+
+[node name="Area2D2" type="Area2D" parent="Clickable"]
+position = Vector2( 1657, 1041 )
+scale = Vector2( 3.24, 1 )
+script = ExtResource( 2 )
+change_to_scene = "res://scenes/connecting_dots.tscn"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable/Area2D2"]
 position = Vector2( 1.33572, -212 )
 scale = Vector2( 1.10362, 1.08381 )
 shape = SubResource( 1 )

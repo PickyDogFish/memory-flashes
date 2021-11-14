@@ -11,4 +11,3 @@ func _input_event(viewport, event, shape_idx):
 	if event is InputEventMouseButton:
 		if event.button_index == 1 and event.pressed:
 			get_tree().change_scene(change_to_scene)
-			#emit_signal("object_clicked", self)

@@ -33,6 +33,7 @@ shape = SubResource( 1 )
 position = Vector2( 1341, 784 )
 scale = Vector2( 2.44, 1.52 )
 script = ExtResource( 2 )
+change_to_scene = "res://scenes/memory_game.tscn"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Clickable/Area2D2"]
 position = Vector2( 1.23978e-05, 0 )

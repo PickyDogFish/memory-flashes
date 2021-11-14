@@ -53,7 +53,7 @@ func _process(delta):
 func place_buttons():
 	var numOfCards = len(buttonStack)
 	var pos_x = get_viewport_rect().size[0]/2 - (200 + 20) * rows/2
-	var pos_y = get_viewport_rect().size[1]/2 - (200 + 10) - 200
+	var pos_y = get_viewport_rect().size[1]/2 - (200 + 10)
 	for i in range(0, rows):
 		for j in range(0, cols):
 			var button: Repeat_button = buttonStack.pop_front()
@@ -64,7 +64,7 @@ func place_buttons():
 			button.connect("button_pressed", self, "on_button_clicked")
 			buttonStack.append(button)
 		pos_x = get_viewport_rect().size[0]/2 - (200 + 20) * rows/2
-		pos_y += 256 + 10
+		pos_y += 200
 
 
 func on_button_clicked(button:Repeat_button):
@@ -102,6 +102,7 @@ func checkIfLastInSolution():
 		flippedButtons = []
 		create_solution()
 		unpress_all_buttons()
+		show_solution()
 	if found and len(flippedButtons) == level*2:
 		if level == levelCount:
 			you_have_won()

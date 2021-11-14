@@ -1,13 +1,24 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://sound_effects_game/Error_soundpuzzle.wav" type="AudioStream" id=1]
 [ext_resource path="res://scripts/connecting_dots.gd" type="Script" id=2]
 [ext_resource path="res://sound_effects_game/2_soundpuzzle.wav" type="AudioStream" id=3]
 [ext_resource path="res://buttons/Next_room.gd" type="Script" id=4]
 [ext_resource path="res://assets/next b.jpg" type="Texture" id=5]
+[ext_resource path="res://assets/lvl-3-active.png" type="Texture" id=6]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_right = 1920.0
+margin_bottom = 1080.0
+texture = ExtResource( 6 )
+expand = true
+stretch_mode = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="mistake_sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 1 )

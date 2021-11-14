@@ -13,7 +13,7 @@ extents = Vector2( 30.9253, 46.8708 )
 script = ExtResource( 3 )
 
 [node name="RoomSketch1" type="Sprite" parent="."]
-position = Vector2( 957.334, 541.188 )
+position = Vector2( 957, 541 )
 scale = Vector2( 0.239472, 0.239472 )
 texture = ExtResource( 1 )
 
