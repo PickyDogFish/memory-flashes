@@ -26,3 +26,14 @@ func _input_event(viewport, event, shape_idx):
 		if event.button_index == 1 and event.pressed:
 			emit_signal("button_pressed", self)
 
+func press():
+	if not pressed:
+		get_child(0).show()
+		get_child(1).hide()
+		pressed = true
+		
+func unpress():
+	if pressed:
+		get_child(1).show()
+		get_child(0).hide()
+		pressed = false
