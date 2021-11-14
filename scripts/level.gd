@@ -11,16 +11,5 @@ func _ready():
 	for node in $Clickable.get_children():
 		node.connect("object_clicked", self, "on_click");
 		
-		
-		
 func on_click(node):
 	print(node.name)
-
-		
-		
-		
-
-
-
-func _on_TextureButton_pressed():
-	get_tree().change_scene("res://scenes/room2.tscn")
