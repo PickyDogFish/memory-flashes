@@ -26,6 +26,7 @@ func _ready():
 		card.scale.x = 0.2
 		card.scale.y = 0.2
 	place_cards()
+	
 
 func place_cards():
 	var pos_x = get_viewport_rect().size[0]/2 - (256 + 20) * rows/2
